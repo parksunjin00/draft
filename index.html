@@ -7,43 +7,306 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
+
+    <!-- GSAP, 스크롤트리거 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- 스와이퍼 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
+    <!-- 커서 -->
     <div class="cursor"></div>
     <div class="cursor-shadow"></div>
+    <!-- 커서 끝 -->
 
-    <header class="top-bar con-min-width">
+    <!-- 탑바 시작 -->
+    <div class="top-bar">
+        <div class="con height-100p flex flex-jc-sb">
+            <a href="#" class="logo flex flex-ai-c">
+                <i class="fas fa-cloud"></i>
+                <span>온야네</span>
+            </a>
+            <nav class="top-bar__menu-box-1">
+                <ul class="height-100p flex">
+                    <li><a class="height-100p flex flex-ai-c" href="#">Home</a></li>
+                    <li><a class="height-100p flex flex-ai-c" href="#">About</a></li>
+                    <li><a class="height-100p flex flex-ai-c" href="#">Products</a></li>
+                    <li><a class="height-100p flex flex-ai-c" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!-- 탑바 끝 -->
+
+    <!-- 헤더바 시작 -->
+    <header class="header-bar con-min-width">
         <div class="con">
-            <div class="top-bar__logo flex flex-jc-c">
+            <div class="header-bar__logo flex flex-jc-c">
                 <span>
                     <span class="fast1">H</span>
-                    <span class="slow1">E</span>
-                    <span class="fast2">L</span>
-                    <span class="slow2">L</span>
+                    <span class="slow1">e</span>
+                    <span class="fast2">l</span>
+                    <span class="slow2">l</span>
                 </span>
                 <div class="flex-grow-1"></div>
                 <span>
                     <span class="fast3">O</span>
-                    <span class="slow3">W</span>
+                    <span class="slow3">w</span>
                 </span>
             </div>
         </div>
     </header>
+    <!-- 헤더 끝 -->
 
-    <section class="section-1 con-min-width">
+    <!-- 스와이퍼 시작 -->
+    <section class="title-bar flex flex-ai-c">
+        <h1 class="con">
+            <i class="fas fa-bolt"></i>
+            <span>Recently</span>
+        </h1>
+    </section>
+
+    <div class="section-top-slider con-min-width">
         <div class="con">
-            <div class="img-box">
-                <img src="https://picsum.photos/id/1/300/300"
-                    alt="">
+            <div class="my-slider-box-1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="my-slider-box-1__prod-name">Project 1</div>
+                            <img src="https://picsum.photos/id/1/1500/600" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="my-slider-box-1__prod-name">Project 1</div>
+                            <img src="https://picsum.photos/id/2/1500/600" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="my-slider-box-1__prod-name">Project 1</div>
+                            <img src="https://picsum.photos/id/3/1500/600" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="my-slider-box-1__prod-name">Project 1</div>
+                            <img src="https://picsum.photos/id/4/1500/600" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="my-slider-box-1__prod-name">Project 1</div>
+                            <img src="https://picsum.photos/id/5/1500/600" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="my-slider-box-1__prod-name">Project 1</div>
+                            <img src="https://picsum.photos/id/6/1500/600" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="my-slider-box-1__nav">
+                    <div class="my-slider-box-1__nav-btn my-slider-box-1__nav-btn-left"><i
+                            class="fas fa-chevron-left"></i></div>
+                    <div class="my-slider-box-1__nav-btn my-slider-box-1__nav-btn-right"><i
+                            class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- 스와이퍼 끝 -->
+
+
+    <!-- 이미지 리스트 섹션 시작 -->
+    <section class="title-bar flex flex-ai-c">
+        <h1 class="con">
+            <i class="fas fa-heart"></i>
+            <span>Collected</span>
+        </h1>
+    </section>
+
+    <!-- 이미지 리스트 섹션 시작 -->
+    <section class="section-prod-list con-min-width">
+        <div class="con">
+            <div class="prod-list">
+                <ul class="flex flex-wrap">
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 1</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 1</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 2</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 2</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 3</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 3</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 4</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 4</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 5</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 5</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 6</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 6</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 7</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 7</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                    <li class="width-25p">
+                        <div>
+                            <div class="prod-list__prod-img img-box">
+                                <img src="https://picsum.photos/id/1/350/300" alt="">
+                                <div class="prod-list__prod-img-txt-1"><span>ITEM 8</span></div>
+                            </div>
+                            <div class="prod-list__prod-name">ITEMNAME 8</div>
+                            <div class="prod-list__prod-price">19,800</div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+
+    <!-- 이미지 리스트 섹션 끝 -->
+
+
+    <!-- 슬라이더 시작 -->
+    <section class="section-slider section-slider-1 con-min-width flex flex-ai-c flex-jc-c">
+        <div class="section-slider__slider-wrap">
+            <div class="article-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="article-slider__slide">
+                                <div class="article-slider__image-box">
+                                    <img src="https://picsum.photos/id/1/1500/600" alt="">
+                                </div>
+                                <div class="article-slider__text-box">
+                                    <span class="article-slider__reg-date">온야 관련 웹사이트 1</span>
+                                    <div class="article-slider__title">온야의 트위터 계정</div>
+                                    <div class="article-slider__text">
+                                        아래 버튼을 누르면 제 트위터 프로필로 이동해요. 새 창이 뜹니다!!
+                                    </div>
+                                    <a href="https://x.com/Oonya_" target="_black" class="article-slider__button">X로 이동</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-slider__slide">
+                                <div class="article-slider__image-box">
+                                    <img src="https://picsum.photos/id/1/1500/600" alt="">
+                                </div>
+                                <div class="article-slider__text-box">
+                                    <span class="article-slider__reg-date">온야 관련 웹사이트 2</span>
+                                    <div class="article-slider__title">네이버 블로그</div>
+                                    <div class="article-slider__text">
+                                        혹시 블로그 하시는 트친이 있다면 이웃이 되어 주세요... 블로그 방치한 지 어언 20년쯤 됐음
+                                    </div>
+                                    <a href="https://uzrit.cafe24.com/" target="_black" class="article-slider__button">유즈릿카 홈으로 이동</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="article-slider__slide">
+                                <div class="article-slider__image-box">
+                                    <img src="https://picsum.photos/id/1/1500/600" alt="">
+                                </div>
+                                <div class="article-slider__text-box">
+                                    <span class="article-slider__reg-date">온야 관련 웹사이트 3</span>
+                                    <div class="article-slider__title">유즈릿카 자컾 홈</div>
+                                    <div class="article-slider__text">
+                                        유즈릿카란? 자캐오타쿠 온야의 자캐커플이다.
+                                        2020년 2월 2일부터 자그마치 곧 5주년을 앞두고 있으며 천재짖님께서 호스팅해주신 cafe24 도메인을 구경해 보세요...
+                                        사이트 구성: 세션 카드, 연성, 프로필 등등
+                                    </div>
+                                    <a href="https://uzrit.cafe24.com/" target="_black" class="article-slider__button">유즈릿카 홈으로 이동</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 슬라이더 끝 -->
+
+    <!-- 푸터 시작 -->
+    <div class="footer-bar">
+        <div class="con height-100p flex flex-jc-sb">
+            <div class="site-by flex flex-ai-c">
+                <span>site by ONYA</span>
+            </div>
+            <nav class="footer-bar__box-1">
+                <ul class="height-100p flex">
+                    <li><a class="height-100p flex flex-ai-c" href="#">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Back to Top</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!-- 푸터 끝 -->
 
 </body>
 
