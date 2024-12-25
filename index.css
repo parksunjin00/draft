@@ -1,0 +1,125 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+/*
+  body{-ms-overflow-style:none; }
+  body::-webkit-scrollbar { display:none; }
+  */
+
+body {
+    margin: 0;
+    height: 10000px;
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 노말라이즈 끝 */
+
+.flex {
+    display: flex;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+/* 커스텀 시작 */
+/* 커서 시작 */
+* {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    top: -300px;
+    left: -300px;
+    /* 처음에 안 보이고 마우스 올리면 보이게 */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(-50%);
+    transition: width .2s, height .2s;
+    z-index: 10;
+}
+
+.cursor-shadow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    opacity: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(-50%);
+    transition: .05s;
+    z-index: 9;
+}
+
+html.need-to-cursor-big .cursor {
+    width: 100px;
+    height: 100px;
+}
+
+html.need-to-cursor-big .cursor-shadow {
+    width: 150px;
+    height: 150px;
+}
+
+.body-content {
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* 커서 끝 */
+
+.top-bar {
+    padding-top: 100px;
+}
+
+.top-bar__logo>span {
+    white-space: nowrap;
+}
+
+.top-bar__logo>span>span {
+    font-size: 250px;
+    display: inline-block;
+}
+
+.con-min-width {
+    min-width: 1200px;
+}
+
+.con {
+    width: 1200px;
+}
+
+.section-1 {
+    position: relative;
+    z-index: -1;
+}
