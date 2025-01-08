@@ -422,7 +422,7 @@ html.need-to-cursor-big .cursor-shadow {
 }
 
 .prod-list__prod-img-txt-1>span::after {
-    content: " 로그 보기";
+    content: " 공사 중";
 }
 
 .prod-list>ul>li:hover .prod-list__prod-img-txt-1 {
