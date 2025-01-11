@@ -302,6 +302,7 @@ html.need-to-cursor-big .cursor-shadow {
     opacity: 100%;
 }
 
+/* 스와이퍼 페이지네이션 */
 .my-slider-box-1 .swiper-pagination {
     position: static;
     display: flex;
@@ -326,7 +327,9 @@ html.need-to-cursor-big .cursor-shadow {
 
 
 .my-slider-box-1 .swiper-pagination-bullet>img {
-    width: 100%;
+    width: 100px;
+    height:100px;
+    object-fit: cover;
     display: block;
 }
 

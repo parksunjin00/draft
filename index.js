@@ -114,29 +114,29 @@ function MySliderBox1__init() {
             clickable: true,
             renderBullet: function (index, className) {
                 const no = index + 1;
-                const url = 'https://picsum.photos/id/' + no + '/100/100';
+                const url = 'https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png';
                 return '<div class="' + className + '"><img class="block" src="' + url + '"></div>';
                 let img = "";
                 if (index == 0) {
-                    img = '<img src ="https://picsum.photos/id/1/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 1) {
-                    img = '<img src ="https://picsum.photos/id/2/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 2) {
-                    img = '<img src ="https://picsum.photos/id/3/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 3) {
-                    img = '<img src ="https://picsum.photos/id/4/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 4) {
-                    img = '<img src ="https://picsum.photos/id/5/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 5) {
-                    img = '<img src ="https://picsum.photos/id/6/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 6) {
-                    img = '<img src ="https://picsum.photos/id/7/64/64">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
 
                 return '<span class="' + className + ' ">' + img + '</span>';
