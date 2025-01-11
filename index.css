@@ -364,7 +364,7 @@ html.need-to-cursor-big .cursor-shadow {
 
 /* 이미지 리스트 섹션 시작 */
 .section-prod-list {
-    margin-top: 0;
+    margin-top: -20px;
     margin-bottom: 100px;
 }
 
@@ -373,7 +373,7 @@ html.need-to-cursor-big .cursor-shadow {
 }
 
 .prod-list>ul>li {
-    margin-top: 20px;
+    margin-top: 48px;
     padding: 0 5px 0;
     box-sizing: border-box;
     cursor: pointer;
@@ -418,8 +418,8 @@ html.need-to-cursor-big .cursor-shadow {
 }
 
 .prod-list__prod-img-txt-1>span {
-    border: 2px solid white;
-    padding: 8px;
+    border: 1px solid white;
+    padding: 8px 12px;
     color: white;
     font-weight: bold;
     border-radius: 100px;
@@ -447,21 +447,23 @@ html.need-to-cursor-big .cursor-shadow {
 
 /* 이미지 이름 시작 */
 .prod-list__prod-name {
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: bold;
     text-align: center;
+    font-size: .8rem;
+    opacity: 60%;
 }
 
 .prod-list__prod-price {
-    margin-top: 10px;
+    margin-top: 6px;
     font-weight: bold;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .prod-list__prod-price::after {
-    content: "원";
-    font-size: 1.3rem;
+    content: "";
+    font-size: 1.2rem;
 }
 
 /* 이미지 이름 끝 */
@@ -499,7 +501,7 @@ html.need-to-cursor-big .cursor-shadow {
     display: block;
     width: 300px;
     height: 300px;
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
     flex-shrink: 0;
     align-self: center;
