@@ -114,29 +114,29 @@ function MySliderBox1__init() {
             clickable: true,
             renderBullet: function (index, className) {
                 const no = index + 1;
-                const url = 'https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png';
+                const url = 'https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_' + no + '.png';
                 return '<div class="' + className + '"><img class="block" src="' + url + '"></div>';
                 let img = "";
                 if (index == 0) {
                     img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
                 }
                 else if (index == 1) {
-                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_2.png">';
                 }
                 else if (index == 2) {
-                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_3.png">';
                 }
                 else if (index == 3) {
-                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_4.png">';
                 }
                 else if (index == 4) {
-                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_5.png">';
                 }
                 else if (index == 5) {
-                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_6.png">';
                 }
                 else if (index == 6) {
-                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_1.png">';
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_7.png">';
                 }
 
                 return '<span class="' + className + ' ">' + img + '</span>';
