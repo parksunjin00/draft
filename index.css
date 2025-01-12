@@ -289,6 +289,8 @@ html.need-to-cursor-big .cursor-shadow {
 
 .my-slider-box-1 .swiper-slide>img {
     width: 100%;
+    height: 650px;
+    object-fit: cover;
     display: block;
     transform: scale(1.1);
     transition: transform 5s;
@@ -321,7 +323,7 @@ html.need-to-cursor-big .cursor-shadow {
     opacity: .5;
     outline: 0;
     overflow: hidden;
-    margin: 0 10px;
+    margin: 20px 10px;
     outline: 0;
 }
 
@@ -367,8 +369,7 @@ html.need-to-cursor-big .cursor-shadow {
 
 /* 이미지 리스트 섹션 시작 */
 .section-prod-list {
-    margin-top: -20px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .prod-list>ul {
