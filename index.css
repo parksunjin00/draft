@@ -158,13 +158,13 @@ li {
 }
 
 html.need-to-cursor-big .cursor {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 html.need-to-cursor-big .cursor-shadow {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 .body-content {
@@ -289,7 +289,7 @@ html.need-to-cursor-big .cursor-shadow {
 
 .my-slider-box-1 .swiper-slide>img {
     width: 100%;
-    height: 650px;
+    height: 600px;
     object-fit: cover;
     display: block;
     transform: scale(1.1);
@@ -304,38 +304,7 @@ html.need-to-cursor-big .cursor-shadow {
     opacity: 100%;
 }
 
-/* 스와이퍼 페이지네이션 */
-.my-slider-box-1 .swiper-pagination {
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 85%;
-    padding: 20px;
-}
-
-.my-slider-box-1 .swiper-pagination-bullet {
-    width: auto;
-    height: auto;
-    border: 50%;
-    border-radius: 50%;
-    background: initial;
-    opacity: .5;
-    outline: 0;
-    overflow: hidden;
-    margin: 20px 10px;
-    outline: 0;
-}
-
-
-.my-slider-box-1 .swiper-pagination-bullet>img {
-    width: 100px;
-    height:100px;
-    object-fit: cover;
-    display: block;
-}
-
-
+/* 스와이퍼 네비게이션 시작 */
 .my-slider-box-1__nav {
     display: flex;
     justify-content: center;
@@ -363,6 +332,38 @@ html.need-to-cursor-big .cursor-shadow {
 .my-slider-box-1 .my-slider-box-1__nav-btn-left.swiper-button-disabled,
 .my-slider-box-1 .my-slider-box-1__nav-btn-right.swiper-button-disabled {
     opacity: 0.3;
+}
+/* 스와이퍼 네비게이션 끝 */
+
+/* 스와이퍼 페이지네이션 */
+.my-slider-box-1 .swiper-pagination {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 85%;
+    margin-top: 40px;
+}
+
+.my-slider-box-1 .swiper-pagination-bullet {
+    width: auto;
+    height: auto;
+    border: 50%;
+    border-radius: 50%;
+    background: initial;
+    opacity: 50%;
+    outline: 0;
+    overflow: hidden;
+    margin: 0px 10px;
+    outline: 0;
+}
+
+
+.my-slider-box-1 .swiper-pagination-bullet>img {
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+    display: block;
 }
 
 /* 스와이퍼 끝 */

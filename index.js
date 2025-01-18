@@ -114,7 +114,7 @@ function MySliderBox1__init() {
             clickable: true,
             renderBullet: function (index, className) {
                 const no = index + 1;
-                const url = 'https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_' + no + '.png';
+                const url = 'https://parksunjin00.github.io/draft/img/cs_pbmist_' + no + '.png';
                 return '<div class="' + className + '"><img class="block" src="' + url + '"></div>';
                 let img = "";
                 if (index == 0) {
@@ -136,6 +136,9 @@ function MySliderBox1__init() {
                     img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_6.png">';
                 }
                 else if (index == 6) {
+                    img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_7.png">';
+                }
+                else if (index == 7) {
                     img = '<img src ="https://cdn.jsdelivr.net/gh/parksunjin00/draft/img/cs_pbmist_7.png">';
                 }
 
