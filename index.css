@@ -12,12 +12,12 @@ html {
 
 @font-face {
 	font-family: 'OffBitTrial-101';
-	src: url('./font/OffBitTrial-101.otf') format('otf');
+	src: url('font/OffBitTrial-101.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'OffBitTrial-Dot';
-	src: url('./font/OffBitTrial-Dot.otf') format('otf');
+	src: url('font/OffBitTrial-Dot.otf') format('opentype');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
@@ -36,6 +36,7 @@ a {
 html,
 body {
     overflow-x: hidden;
+    font-family: 'Pretendard-Regular', sans-serif;
 }
 
 body {
